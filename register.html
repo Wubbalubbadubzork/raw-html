@@ -11,52 +11,49 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Wubbalubbadubzork: Register</title>
     <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <!-- For improved cross-browser rendering -->
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/7.0.0/normalize.css">
     <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
-        crossorigin="anonymous">
-
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
     <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
-    <h2 style="text-align:center;">Registro</h2>
+    <h2 class="text-center">Registro</h2>
     <div class="container">
-        <h4>Cree una cuenta nueva</h4>
+        <h4 class="text-center">Cree una cuenta nueva</h4>
         <form class="form-horizontal">
-        <div class="form-group">
-            <label class="col-md-2 control-label">Correo</label>
-            <div class="col-md-10">
-                <input class="form-control"/>
+            <div class="row">
+                <div class="input-field col-md-3 col-md-offset-3">
+                    <i class="material-icons prefix">account_circle</i>
+                    <input placeholder="Correo" id="email" type="email" class="validate">
+                </div>
+                <div class="input-field col-md-3">
+                    <i class="material-icons prefix">tag_faces</i>
+                    <input placeholder="Nombre" id="name" type="text" class="validate">
+                </div>
             </div>
-        </div>
-        <div class="form-group">
-            <label class="col-md-2 control-label">Nombre</label>
-            <div class="col-md-10">
-                <input class="form-control"/>
+            <div class="row">
+                <div class="input-field col-md-6 col-md-offset-3">
+                    <i class="material-icons prefix">lock_outline</i>
+                    <input placeholder="Contraseña" id="email" type="password" class="validate">
+                </div>
             </div>
-        </div>
-        <div class="form-group">
-            <label class="col-md-2 control-label">Contraseña</label>
-            <div class="col-md-10">
-                <input type="password" class="form-control"/>
+            <div class="row">
+                <div class="input-field col-md-6 col-md-offset-3">
+                    <i class="material-icons prefix">lock</i>
+                    <input placeholder="Confirmar Contraseña" id="email" type="password" class="validate">
+                </div>
             </div>
-        </div>
-        <div class="form-group">
-            <label class="col-md-2 control-label">Confirmar Contraseña</label>
-            <div class="col-md-10">
-                <input type="password" class="form-control" />
+            <div class="text-center">
+                    <input type="submit" class="btn" value="Registrarse" />
             </div>
-        </div>
-        <div class="form-group">
-            <div class="col-md-offset-2 col-md-10">
-                <input type="submit" class="btn btn-default" value="Registrarse" />
-            </div>
-        </div>
         </form>
     </div>
 </body>
